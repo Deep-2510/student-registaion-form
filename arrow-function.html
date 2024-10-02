@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Two Numbers</title>
+  <script type="text/javascript">
+    const calculateSum = () => {
+      const num1 = parseInt(document.getElementById('num1').value);
+      const num2 = parseInt(document.getElementById('num2').value);
+      const sum = num1 + num2;
+      document.getElementById('result').innerText = "Sum: " + sum;
+    };
+  </script>
+</head>
+<body>
+  <h2>Sum of Two Numbers</h2>
+  <label for="num1">Enter first number: </label>
+  <input type="number" id="num1" /><br><br>
+
+  <label for="num2">Enter second number: </label>
+  <input type="number" id="num2" /><br><br>
+
+  <button onclick="calculateSum()">Calculate Sum</button>
+  <p id="result"></p>
+</body>
+</html>
